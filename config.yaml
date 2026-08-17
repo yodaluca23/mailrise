@@ -1,6 +1,6 @@
 name: "Mailrise"
 description: "An SMTP gateway for Apprise notifications."
-version: "1.0.0"
+version: "latest"
 slug: "mailrise"
 init: false
 arch:
