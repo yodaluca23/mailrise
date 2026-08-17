@@ -1,0 +1,15 @@
+name: "Mailrise"
+description: "An SMTP gateway for Apprise notifications."
+version: "1.0.0"
+slug: "mailrise"
+init: false
+arch:
+  - aarch64
+  - amd64
+url: "https://github.com/YoRyan/mailrise"
+ports:
+  8025/tcp: 8025
+map:
+  - type: homeassistant_config
+    read_only: True
+image: ghcr.io/yoryan/mailrise

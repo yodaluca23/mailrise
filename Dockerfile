@@ -12,4 +12,7 @@ COPY --from=builder --chown=mailrise:mailrise /root/.local/ /home/mailrise/.loca
 ENV PATH=/home/mailrise/.local/bin/:$PATH
 EXPOSE 8025
 ENTRYPOINT ["mailrise"]
+
+# Make file if it doesn't exist
+RUN touch /etc/mailrise.conf
 CMD ["/etc/mailrise.conf"]
