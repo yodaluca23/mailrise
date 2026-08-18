@@ -11,5 +11,9 @@ ports:
   8025/tcp: 8025
 map:
   - type: data
-    read_only: true
+    read_only: false
 image: ghcr.io/yoryan/mailrise
+options:
+  mailrise_config: ""
+schema:
+  mailrise_config: str
