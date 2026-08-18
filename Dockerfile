@@ -13,6 +13,4 @@ ENV PATH=/home/mailrise/.local/bin/:$PATH
 EXPOSE 8025
 ENTRYPOINT ["mailrise"]
 
-# Make file if it doesn't exist
-RUN touch /etc/mailrise.conf
-CMD ["/etc/mailrise.conf"]
+CMD ["/data/mailrise.conf"]

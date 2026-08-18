@@ -10,6 +10,6 @@ url: "https://github.com/YoRyan/mailrise"
 ports:
   8025/tcp: 8025
 map:
-  - type: share
-    read_only: True
+  - type: data
+    read_only: true
 image: ghcr.io/yoryan/mailrise
